@@ -9,76 +9,52 @@ This project simulates a real-world sweet shop where users can browse and purcha
 🔐 Authentication & Authorization
 
 User registration and login
-
 JWT-based authentication
 
 Role-based access control:
 
 Admin → Manage sweets & inventory
-
 User → Browse & purchase sweets
 
 🍭 Sweet Management (Admin)
 
 Add new sweets
-
 Edit sweet details
-
 Delete sweets
-
 Restock inventory
 
 🛒 User Operations
 
 View all available sweets
-
 Search sweets by name
-
 Purchase sweets (quantity auto-decreases)
-
 Purchase button disabled when stock is 0
 
 📦 Inventory
 
 Dedicated inventory view
-
 Real-time quantity updates after purchase/restock
 
 🎨 UI / UX
 
 Fully responsive layout
-
 Dark modern theme
-
 Clean card-based design
-
 Toast notifications for success & errors
-
 Role-based UI rendering
 
 🧱 Tech Stack
 Backend
-
 Node.js + TypeScript
-
 Express.js
-
 MongoDB (Atlas)
-
 JWT Authentication
-
 Mongoose
-
 Frontend
-
 React + TypeScript
-
 Vite
-
 Tailwind CSS
-
 Axios
-
 React Router DOM
 
 📁 Project Structure
