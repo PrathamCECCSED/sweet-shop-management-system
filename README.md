@@ -1,99 +1,121 @@
-# sweet-shop-management-system
-🍬 Sweet Shop Management System
+# 🍬 Sweet Shop Management System
 
-A full-stack Sweet Shop Management System built as part of a TDD Kata to demonstrate backend API design, authentication, role-based access control, inventory management, and a modern responsive frontend.
+A full-stack **Sweet Shop Management System** developed as part of a **TDD Kata** for placement evaluation.  
+This project demonstrates backend API development, secure authentication, role-based access control, inventory management, and a modern responsive frontend.
 
-This project simulates a real-world sweet shop where users can browse and purchase sweets, while admins manage inventory securely.
+---
 
-🚀 Features
-🔐 Authentication & Authorization
+## 🚀 Project Overview
 
-User registration and login
-JWT-based authentication
+The Sweet Shop Management System allows:
+- **Users** to browse, search, and purchase sweets.
+- **Admins** to manage sweets, inventory, and stock levels.
 
-Role-based access control:
+The system follows clean architecture, RESTful API principles, and modern UI/UX practices.
 
-Admin → Manage sweets & inventory
-User → Browse & purchase sweets
+---
 
-🍭 Sweet Management (Admin)
+## ✨ Features
 
-Add new sweets
-Edit sweet details
-Delete sweets
-Restock inventory
+### 🔐 Authentication & Authorization
+- User Registration & Login
+- JWT-based authentication
+- Role-based access control:
+  - **Admin**: Full inventory management
+  - **User**: Browse & purchase sweets
 
-🛒 User Operations
+---
 
-View all available sweets
-Search sweets by name
-Purchase sweets (quantity auto-decreases)
-Purchase button disabled when stock is 0
+### 🍭 Sweet Management (Admin Only)
+- Add new sweets
+- Edit sweet details
+- Delete sweets
+- Restock inventory
 
-📦 Inventory
+---
 
-Dedicated inventory view
-Real-time quantity updates after purchase/restock
+### 🛒 User Operations
+- View all available sweets
+- Search sweets by name
+- Purchase sweets
+- Purchase button disabled when quantity is zero
 
-🎨 UI / UX
+---
 
-Fully responsive layout
-Dark modern theme
-Clean card-based design
-Toast notifications for success & errors
-Role-based UI rendering
+### 📦 Inventory Management
+- Real-time inventory updates
+- Dedicated inventory view
+- Quantity auto-updates after purchase or restock
 
-🧱 Tech Stack
-Backend
-Node.js + TypeScript
-Express.js
-MongoDB (Atlas)
-JWT Authentication
-Mongoose
-Frontend
-React + TypeScript
-Vite
-Tailwind CSS
-Axios
-React Router DOM
+---
 
-📁 Project Structure
-sweet-shop-management-system/
-│
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── middleware/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   └── server.ts
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── components/
-│   │   └── App.tsx
-│   └── package.json
-│
-├── screenshots/
-│
-└── README.md
+### 🎨 UI / UX
+- Modern dark theme
+- Responsive layout
+- Card-based sweet display
+- Toast notifications for success & errors
+- Role-based UI rendering
 
-🔌 API Endpoints
-Auth
-Method	Endpoint	Description
-POST	/api/auth/register	Register user
-POST	/api/auth/login	Login user
-Sweets (Protected)
-Method	Endpoint	Description
-POST	/api/sweets	Add sweet (Admin)
-GET	/api/sweets	List sweets
-GET	/api/sweets/search	Search sweets
-PUT	/api/sweets/:id	Update sweet
-DELETE	/api/sweets/:id	Delete sweet (Admin)
-Inventory
-Method	Endpoint	Description
-POST	/api/sweets/:id/purchase	Purchase sweet
-POST	/api/sweets/:id/restock	Restock sweet (Admin)
+---
+
+## 🧱 Tech Stack
+
+### Backend
+- Node.js
+- TypeScript
+- Express.js
+- MongoDB (Atlas)
+- Mongoose
+- JWT Authentication
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Axios
+- React Router DOM
+
+---
+
+
+---
+
+## 🔌 API Endpoints
+
+### Auth
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| POST | `/api/auth/register` | Register user |
+| POST | `/api/auth/login` | Login user |
+
+---
+
+### Sweets (Protected)
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| POST | `/api/sweets` | Add sweet (Admin) |
+| GET | `/api/sweets` | View all sweets |
+| GET | `/api/sweets/search` | Search sweets |
+| PUT | `/api/sweets/:id` | Update sweet |
+| DELETE | `/api/sweets/:id` | Delete sweet (Admin) |
+
+---
+
+### Inventory (Protected)
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| POST | `/api/sweets/:id/purchase` | Purchase sweet |
+| POST | `/api/sweets/:id/restock` | Restock sweet (Admin) |
+
+---
+
+## ⚙️ Setup & Run Locally
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/PrathamCECCSED/sweet-shop-management-system.git
+cd sweet-shop-management-system
+
+
+
